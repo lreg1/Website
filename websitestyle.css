@@ -5,18 +5,26 @@
 
 */
 body {
-   width: 95%; 
+  background-color: lightblue;
 }
 nav {
-   color:blue;
+   color:black;
    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
    padding: 10px;
-   outline: 3px dashed gray;
-   width: 95%;
-   min-width: 640px;
-   max-width: 1024px;
+   outline: 3px solid darkblue;
+   width: 99%;
+   background-color: lightgrey;
 }
-nav #right {
-   text-align: right;
-   color: burlywood;
+.Right {
+  float: right;
+}
+.Right a {
+  padding: 10px;
+  text-align: right;
+}
+#bigQuote {
+  font-size: 50px;
+}
+#littleQuote {
+  font-size: 35px;
 }
