@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*
+   Filename: website style
+
+*/
+
+h1 {
+   color:aqua;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   padding: 10px;
+   outline: 3px dashed gray;
+}
