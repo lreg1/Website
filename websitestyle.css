@@ -1,13 +1,22 @@
 @charset "utf-8";
 
 /*
-   Filename: website style
+   Filename: websitestyle.css
 
 */
-
-h1 {
+body {
+   width: 95%; 
+}
+nav {
    color:aqua;
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
    padding: 10px;
    outline: 3px dashed gray;
+   width: 95%;
+   min-width: 640px;
+   max-width: 1024px;
+}
+nav #right {
+   text-align: right;
+   color: burlywood;
 }
