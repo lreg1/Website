@@ -1,0 +1,3 @@
+Random problems we run into:
+
+We tried to put the Landers name on the left side of the nav bar and have the other buttons on the right but it didnt work. So we put the other stuff in a <div> and then set the float porperty to right.
