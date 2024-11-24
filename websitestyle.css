@@ -8,12 +8,14 @@ body {
   background-color: lightblue;
 }
 nav {
-   color:black;
+   color: black;
    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
    padding: 10px;
    outline: 3px solid darkblue;
-   width: 100%;
+   width: 100%; /* Ensures the nav spans the full width */
    background-color: lightgrey;
+   margin: 0; 
+   box-sizing: border-box; 
 }
 .Right {
   float: right;
