@@ -30,3 +30,17 @@ nav {
 #littleQuote {
   font-size: 35px;
 }
+.articles {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  margin: 20px; 
+}
+article {
+  text-align: center;
+  width: 45%; /* Ensures each article takes about half the width */
+  padding: 20px; /* Adds padding inside each article */
+  box-sizing: border-box; /* Ensures padding is part of the width */
+  outline: 3px dashed gray;
+  background-color: lightskyblue;
+}
