@@ -1,63 +1,55 @@
-@charset "utf-8";
+<!doctype html>
+<html lang="en">
+<head>
+    <!--
+   Author: Ari Regensberg and Reuvi Kupchik
+   Date: 11/16/2024
+   Filename: 
+   -->
+   <meta charset="utf-8">
+   <title>Lander College for Men</title>
+   <link href="websitestyle.css" rel="stylesheet" />
+</head>
 
-/*
-   Filename: websitestyle.css
+<body>
+    <nav>
+        <a href = "website.html">Lander College for Men</a>
+        <div class="Right">
+          <a href = "filler.html">Admissions</a>
+          <a href = "beis.html">Beis Medrash</a>
+          <a href = "academics.html">Academics</a>
+          <a href = "filler.html">Campus Life</a>
+        </div>
+    </nav>
 
-*/
-body {
-  background-color: lightblue;
-}
-nav {
-   color: black;
-   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-   padding: 10px;
-   outline: 3px solid darkblue;
-   width: 100%; /* Ensures the nav spans the full width */
-   background-color: lightgrey;
-   margin: 0; 
-   box-sizing: border-box; 
-}
-.Right {
-  float: right;
-}
-.Right a {
-  padding: 10px;
-  text-align: right;
-}
-.Right a:link {
-   text-decoration: none;
-}
-.Right a:visited {
-   text-decoration: none;
-   color: blue;
-}
-.Right a:hover {
-   text-decoration: underline;
-   color: black;
-}
-.Right a:active {
-   text-decoration: none;
-}
-#bigQuote {
-  font-size: 50px;
-}
-#littleQuote {
-  font-size: 35px;
-}
-.articles {
-  display: flex;
-  justify-content: space-between; 
-  align-items: flex-start; 
-  margin: 20px; 
-}
-article {
-  text-align: center;
-  width: 45%; /* Ensures each article takes about half the width */
-  padding: 20px; /* Adds padding inside each article */
-  box-sizing: border-box; /* Ensures padding is part of the width */
-  outline: 3px dashed gray;
-  background-color: lightskyblue;
-}
-.aTop {
-  text-align: center;
-}
+    <div>
+      <blockquote cite="me" id="bigQuote">
+        Big quote describing Landers
+      </blockquote>
+      <blockquote id="littleQuote">
+        Little quote
+      </blockquote>
+    </div>
+
+    <div class="articles">
+    <article id="kodesh">
+      <h1>Our Intense Torah Study</h1>
+      <p>senectus et netus et malesuada fames ac turpis egestas 
+         maecenas pharetra convallis posuere morbi leo urna 
+         molestie at elementum eu facilisis sed odio 
+         morbi quis commodo odio aenean sed adipiscing diam 
+         donec adipiscing tristique risus nec feugiat in 
+         fermentum posuere</p>
+   </article>
+   <article id="Academics">
+    <h1>Our Prestigious Academics</h1>
+    <p>senectus et netus et malesuada fames ac turpis egestas 
+       maecenas pharetra convallis posuere morbi leo urna 
+       molestie at elementum eu facilisis sed odio 
+       morbi quis commodo odio aenean sed adipiscing diam 
+       donec adipiscing tristique risus nec feugiat in 
+       fermentum posuere</p>
+    </article>
+    </div>
+</body>
+</html>
