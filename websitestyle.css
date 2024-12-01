@@ -5,7 +5,7 @@
 
 */
 body {
-  background-color: lightblue;
+  background-color: white;
 }
 div.title {
   background-image: url("goodpic.jpg");
@@ -25,7 +25,7 @@ div.title {
   box-sizing: border-box; /* Includes padding in height/width calculations */
   border-radius: 20px; /* Rounds the corners of the div */
   overflow: hidden; /* Ensures the background image stays within rounded corners */
-  border: 5px solid rgb(44, 36, 36); /* Adjust color and thickness */
+  border: 5px solid darkblue; /* Adjust color and thickness */
   margin-top: 10px; /* Adds space between the div and the nav bar */
 }
 div.title h1 {
@@ -88,12 +88,15 @@ nav {
   margin: 20px; 
 }
 article {
+  color: white; /* Ensures text contrasts with the background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
+  font-family: Arial, sans-serif; /* Adjust font for readability */
   text-align: center;
   width: 45%; /* Ensures each article takes about half the width */
-  background-color: lightskyblue;
-  padding: 20px; /* Adds spacing inside the div */
+  background-color: darkblue;
+  padding: 50px; /* Adds spacing inside the div */
   box-sizing: border-box; /* Includes padding in height/width calculations */
-  border-radius: 20px; /* Rounds the corners of the div */
+  border-radius: 10px; /* Rounds the corners of the div */
 }
 .aTop {
   text-align: center;
@@ -105,7 +108,7 @@ article {
   border-radius: 10px;
   padding: 20px;
   margin: 30px auto; /* Adds space above and centers the section */
-  width: 80%; /* Adjust width to fit your layout */
+  width: 90%; /* Adjust width to fit your layout */
   text-align: center;
   font-family: Arial, sans-serif;
 }
@@ -149,4 +152,50 @@ article {
   }
 }
 
+.statistics {
+  display: flex; /* Align items horizontally */
+  justify-content: space-between; /* Spread items evenly */
+  align-items: center; /* Aligns images and text vertically */
+  gap: 20px; /* Adds space between each stat */
+  margin: 50px auto;
+  max-width: 1200px; /* Center the section and limit its width */
+}
+
+.stat-item1 {
+  text-align: center; /* Centers both the image and text */
+  flex: 1; /* Ensures all stats are of equal width */
+}
+.stat-item {
+  text-align: center; /* Centers both the image and text */
+  flex: 1; /* Ensures all stats are of equal width */
+}
+
+.stat-item1 img {
+  width: 300px; /* Adjust size of the images */
+  height: auto;
+  margin: 10px 0; /* Space around the image */
+  opacity: 0.3; /* Makes the images 30% opaque */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effects */
+} 
+.stat-item img {
+  width: 200px; /* Adjust size of the images */
+  height: auto;
+  margin: 10px 0; /* Space around the image */
+  opacity: 0.3; /* Makes the images 30% opaque */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.stat-text {
+  font-size: 2.5em; /* Large and prominent text */
+  font-weight: bold;
+  color: darkblue; /* Neutral color for readability */
+  margin: 10px 0; /* Adds spacing around the text */
+}
+
+.stat-item1 img:hover {
+  opacity: 1; /* Fully opaque when hovered over */
+}
+.stat-item img:hover {
+  opacity: 1; /* Fully opaque when hovered over */
+}
 
