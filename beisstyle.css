@@ -4,7 +4,142 @@
    Filename: beisstyle.css
 
 */
+nav {
+    color: black;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    padding: 10px;
+    outline: 3px solid darkblue;
+    width: 100%; /* Ensures the nav spans the full width */
+    background-color: lightgrey;
+    margin: 0; 
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Vertically centers content */
+    justify-content: space-between; /* Space between logo and navigation links */
+    }
+  .logo-link {
+    display: flex; /* Enables flexible alignment */
+    align-items: center; /* Centers the logo vertically in the nav */
+    text-decoration: none; /* Removes the underline from the link */
+  }
+  .logo {
+    height: 50px; /* Adjust the logo size as needed */
+    width: auto; /* Maintains the aspect ratio */
+  }
+  .Right {
+    float: right;
+  }
+  .Right a {
+    padding: 10px;
+    text-align: right;
+  }
+  .Right a:link {
+     text-decoration: none;
+  }
+  .Right a:visited {
+     text-decoration: none;
+     color: blue;
+  }
+  .Right a:hover {
+     text-decoration: underline;
+     color: black;
+  }
+  .Right a:active {
+     text-decoration: none;
+  }
 
 body {
     background-color: lightblue;
+}
+
+div.beistitle {
+    background-image: url("beispic.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid rgb(44, 36, 36);
+    margin-top: 10px;
+}
+
+div.beistitle h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+div.beistitle h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+div.container {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 97vw;
+}
+
+.container .panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in; /* Use the standard property */
+}
+
+.container .panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.container .panel.active {
+    flex: 5;
+}
+
+.container .panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .container .panel:nth-of-type(4),
+    .container .panel:nth-of-type(5) {
+        display: none;
+    }
 }
