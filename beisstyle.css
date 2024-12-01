@@ -4,6 +4,10 @@
    Filename: beisstyle.css
 
 */
+body {
+    background-color: white;
+}
+
 nav {
     color: black;
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
@@ -11,46 +15,50 @@ nav {
     outline: 3px solid darkblue;
     width: 100%; /* Ensures the nav spans the full width */
     background-color: lightgrey;
-    margin: 0; 
+    margin: 0;
     box-sizing: border-box;
     border-radius: 5px;
-    display: flex; /* Aligns items horizontally */
-    align-items: center; /* Vertically centers content */
-    justify-content: space-between; /* Space between logo and navigation links */
-    }
-  .logo-link {
-    display: flex; /* Enables flexible alignment */
-    align-items: center; /* Centers the logo vertically in the nav */
-    text-decoration: none; /* Removes the underline from the link */
-  }
-  .logo {
-    height: 50px; /* Adjust the logo size as needed */
-    width: auto; /* Maintains the aspect ratio */
-  }
-  .Right {
+    display: flex;/* Aligns items horizontally */
+    align-items: center;/* Vertically centers content */
+    justify-content: space-between;/* Space between logo and navigation links */
+}
+
+.logo-link {
+    display: flex;/* Enables flexible alignment */
+    align-items: center;/* Centers the logo vertically in the nav */
+    text-decoration: none;/* Removes the underline from the link */
+}
+
+.logo {
+    height: 50px;/* Adjust the logo size as needed */
+    width: auto;/* Maintains the aspect ratio */
+}
+
+.Right {
     float: right;
-  }
-  .Right a {
+}
+
+.Right a {
     padding: 10px;
     text-align: right;
-  }
-  .Right a:link {
-     text-decoration: none;
-  }
-  .Right a:visited {
-     text-decoration: none;
-     color: blue;
-  }
-  .Right a:hover {
-     text-decoration: underline;
-     color: black;
-  }
-  .Right a:active {
-     text-decoration: none;
-  }
+}
 
-body {
-    background-color: lightblue;
+.Right a:link {
+    text-decoration: none;
+}
+
+.Right a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+.Right a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.Right a:active {
+    text-decoration: none;
 }
 
 div.beistitle {
@@ -71,7 +79,7 @@ div.beistitle {
     box-sizing: border-box;
     border-radius: 20px;
     overflow: hidden;
-    border: 5px solid rgb(44, 36, 36);
+    border: 5px solid darkblue; /* Adjust color and thickness */
     margin-top: 10px;
 }
 
@@ -85,6 +93,21 @@ div.beistitle h2 {
     margin: 0;
 }
 
+.section-header {
+    text-align: center;
+    margin: -30px; /* Reduced top and bottom spacing */
+    font-family: 'Arial', sans-serif;/* Matches your existing font style */
+}
+
+.section-header h2 {
+    font-size: 2.5em;/* Adjust for emphasis */
+    font-weight: bold;
+    color: #333;/* Neutral color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);/* Adds subtle shadow for readability */
+    margin-top: 40px;
+    margin-bottom: -50px;
+}
+
 div.container {
     font-family: 'Muli', sans-serif;
     display: flex;
@@ -92,10 +115,11 @@ div.container {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    margin: 0;
+    margin-top: -10px; /* Smaller margin to bring cards closer to the header */
 }
 
 .container {
+    margin-top: 1px; /* Ensure a small, consistent gap between header and cards */
     display: flex;
     width: 97vw;
 }
@@ -112,7 +136,8 @@ div.container {
     flex: 0.5;
     margin: 10px;
     position: relative;
-    transition: all 700ms ease-in; /* Use the standard property */
+    transition: all 700ms ease-in;/* Use the standard property */
+    border: 3px solid darkblue; /* Adjust color and thickness */
 }
 
 .container .panel h3 {
