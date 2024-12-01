@@ -7,11 +7,36 @@
 body {
   background-color: lightblue;
 }
-blockquote {
+div.title {
   background-image: url("goodpic.jpg");
-  background-size: cover; /* Ensures the image covers the blockquote fully */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center; /* Centers the image within the blockquote */
+  background-size: cover; /* Makes the image cover the entire div */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center; /* Centers the image */
+  height: 100vh; /* Makes the div take the full viewport height */
+  display: flex; /* Aligns text within the div */
+  flex-direction: column; /* Stacks the text vertically */
+  justify-content: center; /* Centers text vertically */
+  align-items: center; /* Centers text horizontally */
+  text-align: center; /* Centers text alignment */
+  color: white; /* Ensures text contrasts with the background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
+  font-family: Arial, sans-serif; /* Adjust font for readability */
+  padding: 20px; /* Adds spacing inside the div */
+  box-sizing: border-box; /* Includes padding in height/width calculations */
+  border-radius: 20px; /* Rounds the corners of the div */
+  overflow: hidden; /* Ensures the background image stays within rounded corners */
+  border: 5px solid rgb(44, 36, 36); /* Adjust color and thickness */
+  margin-top: 10px; /* Adds space between the div and the nav bar */
+
+
+}
+div.title h1 {
+  font-size: 3em; /* Adjust as needed */
+  margin: 0;
+}
+div.title h2 {
+  font-size: 2em; /* Adjust as needed */
+  margin: 0;
 }
 
 nav {
@@ -61,11 +86,61 @@ nav {
 article {
   text-align: center;
   width: 45%; /* Ensures each article takes about half the width */
-  padding: 20px; /* Adds padding inside each article */
-  box-sizing: border-box; /* Ensures padding is part of the width */
-  outline: 3px dashed gray;
   background-color: lightskyblue;
+  padding: 20px; /* Adds spacing inside the div */
+  box-sizing: border-box; /* Includes padding in height/width calculations */
+  border-radius: 20px; /* Rounds the corners of the div */
 }
 .aTop {
   text-align: center;
+}
+
+.news-section {
+  background-color: lightgrey;
+  border: 3px solid darkblue;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px auto; /* Adds space above and centers the section */
+  width: 80%; /* Adjust width to fit your layout */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.news-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: darkblue;
+}
+
+.news-carousel {
+  overflow: hidden; /* Ensures only one item is visible at a time */
+  height: 50px; /* Fixed height for the news items */
+  position: relative; /* Positions the news items for animation */
+}
+
+.news-item {
+  font-size: 1.2em;
+  color: black;
+  padding: 10px 0;
+  position: absolute; /* Positions items absolutely within the container */
+  width: 100%; /* Ensures each item spans the full width */
+  transform: translateY(100%); /* Starts each item below the visible area */
+  opacity: 0; /* Initially hidden */
+  animation: slide 8s linear infinite;
+}
+
+.news-item:nth-child(1) { animation-delay: 0s; }
+.news-item:nth-child(2) { animation-delay: 2s; }
+.news-item:nth-child(3) { animation-delay: 4s; }
+.news-item:nth-child(4) { animation-delay: 6s; }
+
+@keyframes slide {
+  0%, 25% {
+    transform: translateY(0); /* Item is visible */
+    opacity: 1;
+  }
+  30%, 100% {
+    transform: translateY(50%); /* Item slides out */
+    opacity: 0;
+  }
 }
