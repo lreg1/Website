@@ -27,8 +27,6 @@ div.title {
   overflow: hidden; /* Ensures the background image stays within rounded corners */
   border: 5px solid rgb(44, 36, 36); /* Adjust color and thickness */
   margin-top: 10px; /* Adds space between the div and the nav bar */
-
-
 }
 div.title h1 {
   font-size: 3em; /* Adjust as needed */
@@ -82,12 +80,7 @@ nav {
 .Right a:active {
    text-decoration: none;
 }
-#bigQuote {
-  font-size: 50px;
-}
-#littleQuote {
-  font-size: 35px;
-}
+
 .articles {
   display: flex;
   justify-content: space-between; 
@@ -155,3 +148,5 @@ article {
     opacity: 0;
   }
 }
+
+
