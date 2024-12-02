@@ -14,13 +14,13 @@ div.title {
   background-size: cover; /* Makes the image cover the entire div */
   background-repeat: no-repeat; /* Prevents tiling */
   background-position: center; /* Centers the image */
-  height: 100vh; /* Makes the div take the full viewport height */
+  height: 84vh; /* Makes the div take the full viewport height */
   display: flex; /* Aligns text within the div */
   flex-direction: column; /* Stacks the text vertically */
   justify-content: center; /* Centers text vertically */
   align-items: center; /* Centers text horizontally */
   text-align: justify;
-  color: white; /* Ensures text contrasts with the background */
+  color: darkblue; /* Ensures text contrasts with the background */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
   font-family: Arial, sans-serif; /* Adjust font for readability */
   padding: 20px; /* Adds spacing inside the div */
@@ -45,7 +45,7 @@ nav {
   outline: 3px solid darkblue;
   width: 100%; /* Ensures the nav spans the full width */
   background-color: lightgrey;
-  margin: 0; 
+  margin: 0;
   box-sizing: border-box;
   border-radius: 5px;
   display: flex; /* Aligns items horizontally */
@@ -64,32 +64,32 @@ nav {
 .Right {
   float: right;
 }
-.Right a {
+.navBar a {
   padding: 10px;
   text-align: right;
 }
-.Right a:link {
+.navBar a:link {
    text-decoration: none;
 }
-.Right a:visited {
+.navBar a:visited {
    text-decoration: none;
    color: darkblue;
 }
-.Right a:hover {
+.navBar a:hover {
    text-decoration: underline;
    color: #FFD700;
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
 
 }
-.Right a:active {
+.navBar a:active {
    text-decoration: none;
 }
 
 .articles {
   display: flex;
-  justify-content: space-between; 
-  align-items: flex-start; 
-  margin: 20px; 
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
 }
 article {
   color: white; /* Ensures text contrasts with the background */
@@ -119,10 +119,6 @@ article h1 a:hover {
   text-decoration: underline; /* Adds the underline back on hover */
   cursor: pointer; /* Changes the cursor to a pointer on hover */
 }
-.aTop {
-  text-align: center;
-}
-
 .news-section {
   background-color: lightgrey;
   border: 3px solid darkblue;
@@ -197,7 +193,7 @@ article h1 a:hover {
   margin: 10px 0; /* Space around the image */
   opacity: 0.3; /* Makes the images 30% opaque */
   transition: opacity 0.3s ease; /* Smooth transition for hover effects */
-} 
+}
 .stat-item img {
   width: 200px; /* Adjust size of the images */
   height: auto;
@@ -316,4 +312,20 @@ h1 {
 
 .faq.active .faq-toggle {
   background-color: #9fa4a8;
+}
+.aBottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.aBottom h3 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-decoration: underline;
+  font-size: 2em;
+  height: 50px;
+}
+.aBottom p {
+  font-size: 20px;
 }
