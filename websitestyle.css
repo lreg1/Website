@@ -329,3 +329,17 @@ h1 {
 .aBottom p {
   font-size: 20px;
 }
+#thing {
+  background-color: lightgrey;
+  border: 3px darkblue solid;
+  border-radius: 5px;
+}
+#stuff {
+  position: fixed;
+  top: 0;
+  left: 40;
+  background-color: lightgrey;
+  border: 3px darkblue solid;
+  border-radius: 5px;
+  width: 29.5vw;
+}
