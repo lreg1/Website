@@ -19,7 +19,7 @@ div.title {
   flex-direction: column; /* Stacks the text vertically */
   justify-content: center; /* Centers text vertically */
   align-items: center; /* Centers text horizontally */
-  text-align: center; /* Centers text alignment */
+  text-align: justify;
   color: white; /* Ensures text contrasts with the background */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
   font-family: Arial, sans-serif; /* Adjust font for readability */
