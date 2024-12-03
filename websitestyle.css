@@ -212,7 +212,7 @@ article h1 a:hover {
 .stat-text2 {
   font-size: 2.5em; /* Large and prominent text */
   font-weight: bold;
-  color: darkblue; 
+  color: darkblue;
   margin: 10px 0; /* Adds spacing around the text */
 }
 .stat-item1 img:hover {
@@ -320,13 +320,15 @@ h1 {
   background-color: #9fa4a8;
 }
 .aBottom {
+  padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
 }
 .aBottom h3 {
   text-align: center;
-  color: white;
+  color: darkblue;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   text-decoration: underline;
   font-size: 2em;
@@ -335,17 +337,49 @@ h1 {
 .aBottom p {
   font-size: 20px;
 }
+.aBottom img {
+  position: relative;
+  top: 100px;
+  border-radius: 5px;
+  height: 50vh;
+}
+.aBottom div {
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 10px;
+}
 #thing {
   background-color: lightgrey;
   border: 3px darkblue solid;
   border-radius: 5px;
+  width: 20vw;
+  position: relative;
+  top: 50px;
+  z-index: 2;
+
 }
 #stuff {
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 40;
   background-color: lightgrey;
   border: 3px darkblue solid;
   border-radius: 5px;
-  width: 29.5vw;
+  width: 20vw;
+  z-index: 2;
+}
+.parallax-background {
+    position: absolute;
+    clip-path: inset(0% 68% 0% 0%);
+    top: 150vh;
+    left: 0;
+    width: 100%;
+    height: 400%;
+    background-image: url('goodpic.jpg'); /* Replace with a suitable image */
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    filter: brightness(0.7); /* Darkens the background for contrast */
+    z-index: 1;
+    border-radius: 20px; /* Matches the section's rounded corners */
 }
