@@ -206,10 +206,15 @@ article h1 a:hover {
 .stat-text {
   font-size: 2.5em; /* Large and prominent text */
   font-weight: bold;
-  color: darkblue; /* Neutral color for readability */
+  color: #FFD700; /* Neutral color for readability */
   margin: 10px 0; /* Adds spacing around the text */
 }
-
+.stat-text2 {
+  font-size: 2.5em; /* Large and prominent text */
+  font-weight: bold;
+  color: darkblue; 
+  margin: 10px 0; /* Adds spacing around the text */
+}
 .stat-item1 img:hover {
   opacity: 1; /* Fully opaque when hovered over */
 }
