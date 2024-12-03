@@ -1,7 +1,7 @@
 var elem = document.getElementById("thing")
 var orig = elem.outerHTML
 var words = elem.innerHTML
-window.addEventListener('scroll', function() {if (window.scrollY >= elem.parentElement.scrollHeight + 180) {change()} else {unChange()}} );
+window.addEventListener('scroll', function() {if (window.scrollY >= elem.parentElement.scrollHeight + 260) {change()} else {unChange()}} );
 function change() {
   elem.outerHTML = "<ul id='stuff'>" + words + "</ul>"
   elem = document.getElementById("stuff")
