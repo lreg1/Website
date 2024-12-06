@@ -1,4 +1,5 @@
 
+
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
@@ -90,7 +91,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: -50px;
 }
 article {
   color: white; /* Ensures text contrasts with the background */
@@ -120,55 +122,101 @@ article h1 a:hover {
   text-decoration: underline; /* Adds the underline back on hover */
   cursor: pointer; /* Changes the cursor to a pointer on hover */
 }
-.news-section {
-  background-color: lightgrey;
-  border: 3px solid darkblue;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 30px auto; /* Adds space above and centers the section */
-  width: 90%; /* Adjust width to fit your layout */
+
+
+.section-header {
   text-align: center;
+  margin: 80px; /* Reduced top and bottom spacing */
   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 }
 
-.news-section h2 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  color: darkblue;
+.section-header h2 {
+  font-size: 2.5em;/* Adjust for emphasis */
+  font-weight: bold;
+  color: #FFD700;/* Neutral color for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);/* Adds subtle shadow for readability */
+  margin-top: 40px;
+  margin-bottom: -50px;
+}
+body.carousel {
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  display: flex;
+  justify-content: center; /* Horizontally center the carousels */
+  align-items: center;    /* Vertically center the carousels */
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4; /* Optional: Add a background color */
 }
 
-.news-carousel {
-  overflow: hidden; /* Ensures only one item is visible at a time */
-  height: 50px; /* Fixed height for the news items */
-  position: relative; /* Positions the news items for animation */
+.carousels-container {
+  display: flex;
+  gap: 120px; /* Space between carousels */
+  justify-content: center;
+  align-items: center;
 }
 
-.news-item {
-  font-size: 1.2em;
-  color: black;
-  padding: 10px 0;
-  position: absolute; /* Positions items absolutely within the container */
-  width: 100%; /* Ensures each item spans the full width */
-  transform: translateY(100%); /* Starts each item below the visible area */
-  opacity: 0; /* Initially hidden */
-  animation: slide 8s linear infinite;
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 600px; /* Adjusted height to accommodate text */
+  width: 500px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
 }
 
-.news-item:nth-child(1) { animation-delay: 0s; }
-.news-item:nth-child(2) { animation-delay: 2s; }
-.news-item:nth-child(3) { animation-delay: 4s; }
-.news-item:nth-child(4) { animation-delay: 6s; }
-
-@keyframes slide {
-  0%, 25% {
-    transform: translateY(0); /* Item is visible */
-    opacity: 1;
-  }
-  30%, 100% {
-    transform: translateY(50%); /* Item slides out */
-    opacity: 0;
-  }
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+  width: calc(500px * 4);
+  height: 500px;
 }
+
+.image-container img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.text-area {
+  text-align: center;
+  font-size: 18px;
+  padding: 1px;
+  border-radius: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1px;
+  width: calc(100% - 20px);
+  padding: 0 10px;
+}
+
+.btn {
+  background-color: darkblue;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 100px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  color: #FFD700;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+
 
 .statistics {
   display: flex; /* Align items horizontally */
