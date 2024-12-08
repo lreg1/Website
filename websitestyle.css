@@ -29,22 +29,22 @@ div.title {
   box-sizing: border-box; /* Includes padding in height/width calculations */
   border-radius: 20px; /* Rounds the corners of the div */
   overflow: hidden; /* Ensures the background image stays within rounded corners */
-  border: 5px solid darkblue; /* Adjust color and thickness */
+  border: 5px solid #042f84; /* Adjust color and thickness */
   margin-top: 10px; /* Adds space between the div and the nav bar */
 }
 div.title h1 {
-  font-size: 3em; /* Adjust as needed */
+  font-size: 3em; 
   margin: 0;
 }
 div.title h2 {
-  font-size: 2em; /* Adjust as needed */
+  font-size: 2em; 
   margin: 0;
 }
 nav {
   color: black;
   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
   padding: 10px;
-  outline: 3px solid darkblue;
+  outline: 3px solid #042f84;
   width: 100%; /* Ensures the nav spans the full width */
   background-color: lightgrey;
   margin: 0;
@@ -60,7 +60,7 @@ nav {
   text-decoration: none; /* Removes the underline from the link */
 }
 .logo {
-  height: 50px; /* Adjust the logo size as needed */
+  height: 50px; 
   width: auto; /* Maintains the aspect ratio */
 }
 .Right {
@@ -75,11 +75,11 @@ nav {
 }
 .navBar a:visited {
    text-decoration: none;
-   color: darkblue;
+   color: #042f84;
 }
 .navBar a:hover {
    text-decoration: underline;
-   color: #FFD700;
+   color: #f4c426;
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
 
 }
@@ -100,7 +100,7 @@ article {
   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
   text-align: center;
   width: 45%; /* Ensures each article takes about half the width */
-  background-color: darkblue;
+  background-color: #042f84;
   padding: 50px; /* Adds spacing inside the div */
   box-sizing: border-box; /* Includes padding in height/width calculations */
   border-radius: 10px; /* Rounds the corners of the div */
@@ -118,7 +118,7 @@ article h1 a {
   transition: color 0.3s ease; /* Adds a smooth transition for the hover effect */
 }
 article h1 a:hover {
-  color: #FFD700; /* Change the color on hover (gold in this case) */
+  color: #f4c426; /* Change the color on hover (gold in this case) */
   text-decoration: underline; /* Adds the underline back on hover */
   cursor: pointer; /* Changes the cursor to a pointer on hover */
 }
@@ -133,7 +133,7 @@ article h1 a:hover {
 .section-header h2 {
   font-size: 2.5em;/* Adjust for emphasis */
   font-weight: bold;
-  color: #FFD700;/* Neutral color for contrast */
+  color: #f4c426;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);/* Adds subtle shadow for readability */
   margin-top: 40px;
   margin-bottom: -50px;
@@ -197,7 +197,7 @@ body.carousel {
 }
 
 .btn {
-  background-color: darkblue;
+  background-color: #042f84;
   color: #fff;
   border: none;
   padding: 0.5rem;
@@ -209,7 +209,7 @@ body.carousel {
 
 .btn:hover {
   opacity: 0.9;
-  color: #FFD700;
+  color: #f4c426;
 }
 
 .btn:focus {
@@ -254,13 +254,13 @@ body.carousel {
 .stat-text {
   font-size: 2.5em; /* Large and prominent text */
   font-weight: bold;
-  color: #FFD700; /* Neutral color for readability */
+  color: #f4c426; /* Neutral color for readability */
   margin: 10px 0; /* Adds spacing around the text */
 }
 .stat-text2 {
   font-size: 2.5em; /* Large and prominent text */
   font-weight: bold;
-  color: darkblue;
+  color: #042f84;
   margin: 10px 0; /* Adds spacing around the text */
 }
 .stat-item1 img:hover {
@@ -301,7 +301,7 @@ h1 {
 .faq.active::after {
   content: '\f075';
   font-family: 'Font Awesome 5 Free';
-  color: darkblue;
+  color: #042f84;
   font-size: 7rem;
   position: absolute;
   opacity: 0.2;
@@ -311,7 +311,7 @@ h1 {
 }
 
 .faq.active::before {
-  color: #FFD700;
+  color: #f4c426;
   top: -10px;
   left: -30px;
   transform: rotateY(180deg);
@@ -376,7 +376,7 @@ h1 {
 }
 .aBottom h3 {
   text-align: center;
-  color: darkblue;
+  color: #042f84;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   text-decoration: underline;
   font-size: 2em;
@@ -398,7 +398,7 @@ h1 {
 }
 #thing {
   background-color: lightgrey;
-  border: 3px darkblue solid;
+  border: 3px #042f84 solid;
   border-radius: 5px;
   width: 20vw;
   position: relative;
@@ -411,7 +411,7 @@ h1 {
   top: 0px;
   left: 40;
   background-color: lightgrey;
-  border: 3px darkblue solid;
+  border: 3px #042f84 solid;
   border-radius: 5px;
   width: 20vw;
   z-index: 2;
@@ -449,7 +449,7 @@ h1 {
   align-content: center;
 }
 .ripple {
-  background-color: darkblue;
+  background-color: #042f84;
   border-radius: 10px;
   color: #fff;
   border: 1px purple solid;
