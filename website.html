@@ -1,242 +1,199 @@
-@charset "utf-8";
 
-/*
-   Filename: beisstyle.css
+<!doctype html>
+<html lang="en">
+<head>
+    <!--
+   Author: Ari Regensberg and Reuvi Kupchik
+   Date: 11/16/2024
+   Filename: website.html
+   -->
+   <meta charset="utf-8">
+   <title>Lander College for Men</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+   <link href="websitestyle.css" rel="stylesheet" />
+</head>
 
-*/
-body {
-    background-color: white;
-}
+<body>
+  <nav class="navBar">
+    <a href="website.html" class="logo-link">
+      <img src="lcm-logo.png" alt="College Logo" class="logo">
+    </a>
+      <div class="Right">
+        <a href = "filler.html">Admissions</a>
+        <a href = "beis.html">Beis Medrash</a>
+        <a href = "academics.html">Academics</a>
+        <a href = "filler.html">Campus Life</a>
+      </div>
+  </nav>
 
-nav {
-    color: black;
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-    padding: 10px;
-    outline: 3px solid #042f84;
-    width: 100%; /* Ensures the nav spans the full width */
-    background-color: lightgrey;
-    margin: 0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    display: flex; /* Aligns items horizontally */
-    align-items: center; /* Vertically centers content */
-    justify-content: space-between; /* Space between logo and navigation links */
-    }
-  .logo-link {
-    display: flex; /* Enables flexible alignment */
-    align-items: center; /* Centers the logo vertically in the nav */
-    text-decoration: none; /* Removes the underline from the link */
-  }
-  .logo {
-    height: 50px; /* Adjust the logo size as needed */
-    width: auto; /* Maintains the aspect ratio */
-  }
-  .Right {
-    float: right;
-  }
-  .navBar a {
-    padding: 10px;
-    text-align: right;
-  }
-  .navBar a:link {
-     text-decoration: none;
-  }
-  .navBar a:visited {
-     text-decoration: none;
-     color: #042f84;
-  }
-  .navBar a:hover {
-     text-decoration: underline;
-     color: #f4c426;
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
-  
-  }
-  .navBar a:active {
-     text-decoration: none;
-  }
+    <div class="title">
+      <h1>Lander College For Men</h1>
+      <h2>Beis Medrash L'Talmud</h2>
+    </div>
 
-div.beistitle {
-    background-image: url("beispic.jpeg");
-    background-size: auto 175%; /* Makes the height of the image 150% of the container's height */
-    background-repeat: no-repeat;
-    background-position: center 20%; /* Moves the image upward, showing more of the top */
-    height: 100vh; /* Adjusts the height to occupy less space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 5px solid #042f84; /* Adjust color and thickness */
-    margin-top: 10px;
-}
+    <div class="articles">
+    <article id="kodesh">
+      <h1> <a href = "beis.html">Our Intense and Warm Beis Medrash</a></h1>
+      <p>Under the leadership of our Rosh HaYeshiva, Rav Yonason Sacks Shlit"a,
+        our Beis Medrash provides an environment where you can not only maintain 
+        your level of learning from Eretz Yisrael but also strive for even greater 
+        achievements. With nearly 20 Rebbeim on staff, each Talmid receives personalized 
+        guidance to support and enhance their growth.</p>
+   </article>
+   <article id="Academics">
+    <h1> <a href = "academics.html">Our Prestigious Academics</a></h1>
+    <p>Our academic program, led by Dean Henry Abramson, provides a diverse selection of majors to suit your interests. 
+      Classes are taught by world-class professors and feature rigorous curricula. However, our dedicated staff is always
+      available to support students, whether during their time at the college or as they transition into the workforce.
+    </p>
+    </article>
+    </div>
 
-div.beistitle h1 {
-    font-size: 3em;
-    margin: 0;
-}
+    <div class="section-header">
+      <h2>See What's Going on at LCM!</h2>
+   </div>
+    
+    <div class="carousels-container">
+      <!-- First Carousel -->
+      <div class="carousel">
+        <div class="image-container" id="imgs1">
+          <img src="ravsun.jpeg" alt="first-image" />
+          <img src="ravsoloveichik.jpeg" alt="second-image" />
+          <img src="ravsacks.jpeg" alt="third-image" />
+          <img src="ravbamberger.jpeg" alt="fourth-image" />
+        </div>
+        <div class="text-area" id="text-area1">
+          <p>This is the first image description.</p>
+        </div>
+        <div class="buttons-container">
+          <button id="left1" class="btn">Prev</button>
+          <button id="right1" class="btn">Next</button>
+        </div>
+      </div>
+    
+      <!-- Second Carousel -->
+      <div class="carousel">
+        <div class="image-container" id="imgs2">
+          <img src="ravsacks.jpeg" alt="first-image" />
+          <img src="ravsun.jpeg" alt="second-image" />
+          <img src="ravsoloveichik.jpeg" alt="third-image" />
+          <img src="ravbamberger.jpeg" alt="fourth-image" />
+        </div>
+        <div class="text-area" id="text-area2">
+          <p>This is the second carousel description.</p>
+        </div>
+        <div class="buttons-container">
+          <button id="left2" class="btn">Prev</button>
+          <button id="right2" class="btn">Next</button>
+        </div>
+      </div>
+    </div>
+    
+    <section class="statistics">
+      <div class="stat-item1">
+        <img src="teacher-kids.png" alt="Student to Teacher Ratio" />
+        <p class="stat-text">8:1 Student to Staff Ratio</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-text2">85% of Talmidim are מסיים the Yeshiva Mesechta</p>
+        <img src="free-opened-book-icon-3163-thumb.png" alt="Learning" />
+      </div>
+      <div class="stat-item">
+        <img src="job.png" alt="Job Placement" />
+        <p class="stat-text">98% Job Placement Rate</p>
+      </div>
+    </section>
+    
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+      <div class="faq">
+        <h3 class="faq-title">
+          How many shiurim options are there?
+        </h3>
 
-div.beistitle h2 {
-    font-size: 2em;
-    margin: 0;
-}
+        <p class="faq-text">
+          There are 9 different morning seder Rebbeim and a 8 different night seder chabura options, 
+          so there's something for everyone!
+        </p>
 
-/* Adjust spacing and corner styling */
-.beistitle {
-    margin-bottom: 50px; /* Adds space below the big picture */
-}
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
 
-.summary-section {
-    position: relative;
-    height: 70vh; /* Adjust height as needed */
-    color: white;
-    text-align: center;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px 20px; /* Adds space around the section for better flow */
-    border-radius: 25px; /* Rounds the corners */
-    border: 5px solid #042f84; /* Adjust color and thickness */
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4); /* Adds a subtle shadow for a "lifted" look */
-}
+      <div class="faq">
+        <h3 class="faq-title">
+          What is the standard tuition cost?
+        </h3>
+        <p class="faq-text">
+          The baseline tuition price is $10,000 a semester, but majority of our students
+          are offered generous scholarships and financial aid.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="faq">
+        <h3 class="faq-title">
+          How many differennt academic majors are there?
+        </h3>
+        <p class="faq-text">
+          9 of the popular, classic majors that all good Jews go into.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="faq">
+        <h3 class="faq-title">
+          What if I want to learn afternoon seder? How does that work with classes?
+        </h3>
+        <p class="faq-text">
+          We have a large selection of flexible classes that you can choose from to make 
+          your schedule fit for you.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
 
-.parallax-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('greatbeis.jpg'); /* Replace with a suitable image */
-    background-size: cover;
-    background-attachment: fixed; /* Parallax effect */
-    background-position: center;
-    filter: brightness(0.7); /* Darkens the background for contrast */
-    z-index: 1;
-    border-radius: 20px; /* Matches the section's rounded corners */
-}
-
-.summary-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6); /* Translucent background for readability */
-    border-radius: 15px; /* Slightly rounder corners for the content box */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Adds a soft shadow */
-    animation: fadeInUp 1s ease-out; /* Entrance animation */
-    padding: 30px; /* Extra padding for a balanced layout */
-}
-.summary-content h2 {
-    font-size: 1.5em; /* Bigger, bolder title */
-    margin-bottom: 20px;
-    color: #f4c426; /* Gold for an eye-catching, elegant effect */
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Adds depth to the text */
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-}
-
-.summary-content p {
-    font-size: 1em; /* Larger text for readability */
-    line-height: 2; /* More spacing between lines */
-    color: #E8E8E8; /* Soft white for readability against dark backgrounds */
-    text-align: justify; /* Aligns text evenly for a polished look */
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-    margin-bottom: 20px; /* Adds spacing between paragraphs */
-}
-
-
-
-
-/* Animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.section-header {
-    text-align: center;
-    margin: -30px; /* Reduced top and bottom spacing */
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-}
-
-.section-header h2 {
-    font-size: 2.5em;/* Adjust for emphasis */
-    font-weight: bold;
-    color: #f4c426;/* Neutral color for contrast */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);/* Adds subtle shadow for readability */
-    margin-top: 40px;
-    margin-bottom: -50px;
-}
-
-div.container {
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin-top: -10px; /* Smaller margin to bring cards closer to the header */
-}
-
-.container {
-    margin-top: 1px; /* Ensure a small, consistent gap between header and cards */
-    display: flex;
-    width: 97vw;
-}
-
-.container .panel {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    border-radius: 50px;
-    color: #E0E0E0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-    cursor: pointer;
-    flex: 0.5;
-    margin: 10px;
-    position: relative;
-    transition: all 700ms ease-in;/* Use the standard property */
-    border: 3px solid #042f84; /* Adjust color and thickness */
-}
-
-.container .panel h3 {
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
-}
-
-.container .panel.active {
-    flex: 5;
-}
-
-.container .panel.active h3 {
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100vw;
-    }
-
-    .container .panel:nth-of-type(4),
-    .container .panel:nth-of-type(5) {
-        display: none;
-    }
-}
+      <div class="faq">
+        <h3 class="faq-title">
+          Are there any club options?
+        </h3>
+        <p class="faq-text">
+          Absolutely! we have close to 20 clubs, ranging from baseball to art to Sefardi Halacha. 
+          And if you can't find one right for you, you can start your own!
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="faq">
+        <h3 class="faq-title">
+          What are shabbosim like?
+        </h3>
+        <p class="faq-text">
+          Shabbosim in yeshiva are vital to the yeshiva experience, that's why we make sure 
+          to have delicious food, great ruach, and of course great extra shiurim options. 
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+    <script src="website.js"></script>
+    
+    
+</body>
+</html>
