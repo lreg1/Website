@@ -32,6 +32,9 @@ div.title {
   border: 5px solid #042f84; /* Adjust color and thickness */
   margin-top: 10px; /* Adds space between the div and the nav bar */
 }
+#aTitle {
+   background-image: url("building.jpg");
+}
 div.title h1 {
   font-size: 3em; 
   margin: 0;
@@ -390,6 +393,7 @@ h1 {
   top: 100px;
   border-radius: 5px;
   height: 50vh;
+   width: 447px;
 }
 .aBottom div {
   background-color: lightgrey;
