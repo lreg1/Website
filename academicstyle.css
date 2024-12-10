@@ -111,8 +111,7 @@ h1 {
   font-size: 20px;
 }
 .aBottom img {
-  position: relative;
-  top: 100px;
+   align-self: center;
   border-radius: 5px;
   height: 50vh;
    width: 447px;
