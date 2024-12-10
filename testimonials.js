@@ -6,39 +6,34 @@ const role = document.querySelector('.role')
 
 const testimonials = [
   {
-    name: 'Miyah Myles',
-    text:
-      "I've worked with literally hundreds of HTML/CSS developers and I have to say the top spot goes to this guy. This guy is an amazing developer. He stresses on good, clean code and pays heed to the details. I love developers who respect each and every aspect of a throughly thought out design and do their best to put it in code. He goes over and beyond and transforms ART into PIXELS - without a glitch, every time.",
+    name: 'Reuvie K.',
+    text: "Lander’s rigorous computer science program has equipped me with the skills to tackle real-world problems. The professors are incredibly supportive and always encourage us to push the boundaries of our knowledge."
   },
   {
-    name: 'June Cha',
-    text:
-      'This guy is an amazing frontend developer that delivered the task exactly how we need it, do your self a favor and hire him, you will not be disappointed by the work delivered. He will go the extra mile to make sure that you are happy with your project. I will surely work again with him!',
+    name: 'Yaakov C.',
+    text: "Lander's finance program is top-notch. The courses are challenging yet rewarding,
+      and the real-world applications of what we learn are evident every day. The faculty are
+  experts in their fields and incredibly approachable."
   },
   {
-    name: 'Iida Niskanen',
-    text:
-      "This guy is a hard worker. Communication was also very good with him and he was very responsive all the time, something not easy to find in many freelancers. We'll definitely repeat with him.",
+    name: 'Idan W.',
+    text: "The blend of theoretical knowledge and practical experience in Lander’s finance program is unparalleled. From internships to guest lectures by industry leaders, I’ve gained invaluable insights and connections."
   },
   {
-    name: 'Renee Sims',
-    text:
-      "This guy does everything he can to get the job done and done right. This is the second time I've hired him, and I'll hire him again in the future.",
+    name: 'Ari R.',
+    text: "The hands-on projects and collaborative environment at Lander’s have been instrumental in my growth as a computer scientist. I’ve had the opportunity to work on innovative projects that truly make a difference."
   },
   {
-    name: 'Jonathan Nunfiez',
-    text:
-      "I had my concerns that due to a tight deadline this project can't be done. But this guy proved me wrong not only he delivered an outstanding work but he managed to deliver 1 day prior to the deadline. And when I asked for some revisions he made them in MINUTES. I'm looking forward to work with him again and I totally recommend him. Thanks again!",
+    name: ' Proffessor Jonathan Nunfiez',
+    text: "Teaching at Lander’s has been a fulfilling experience. The students' enthusiasm and dedication to their studies are inspiring, and the academic environment here fosters a culture of curiosity and excellence."
+    },
+  {
+    name: 'Dr Aaron Cohen',
+    text: "Lander’s emphasis on mental health and well-being is commendable. The institution provides a supportive environment that allows students to thrive academically while maintaining their personal well-being."
   },
   {
-    name: 'Sasha Ho',
-    text:
-      'This guy is a top notch designer and front end developer. He communicates well, works fast and produces quality work. We have been lucky to work with him!',
-  },
-  {
-    name: 'Veeti Seppanen',
-    text:
-      'This guy is a young and talented IT professional, proactive and responsible, with a strong work ethic. He is very strong in PSD2HTML conversions and HTML/CSS technology. He is a quick learner, eager to learn new technologies. He is focused and has the good dynamics to achieve due dates and outstanding results.',
+    name: 'Jacob Seppanen',
+    text: "My time at Lander’s was pivotal in shaping my career. The strong academic foundation and the emphasis on practical skills prepared me to excel in the tech industry. Lander’s continues to be a place where future leaders are made."
   },
 ]
 
