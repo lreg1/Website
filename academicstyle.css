@@ -114,9 +114,13 @@ h1 {
    align-self: center;
   border-radius: 5px;
   height: 50vh;
-   width: 447px;
+  width: 250%;
 }
-.aBottom div {
+.img-container {
+  align-items: center;
+  width: 33.33%;
+}
+.middle {
   background-color: lightgrey;
   padding: 20px;
   border-radius: 10px;
