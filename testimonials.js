@@ -11,9 +11,7 @@ const testimonials = [
   },
   {
     name: 'Yaakov C.',
-    text: "Lander's finance program is top-notch. The courses are challenging yet rewarding,
-      and the real-world applications of what we learn are evident every day. The faculty are
-  experts in their fields and incredibly approachable."
+    text: "Lander's finance program is top-notch. The courses are challenging yet rewarding, and the real-world applications of what we learn are evident every day. The faculty are experts in their fields and incredibly approachable."
   },
   {
     name: 'Idan W.',
