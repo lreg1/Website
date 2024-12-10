@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
@@ -7,10 +8,10 @@
 */
 body {
   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-  background-color: darkgrey;
+  background-color: white;
 }
 div.title {
-  background-image: url("building.jpg");
+  background-image: url("microscope.jpg");
   background-size: cover; /* Makes the image cover the entire div */
   background-repeat: no-repeat; /* Prevents tiling */
   background-position: center; /* Centers the image */
@@ -85,11 +86,17 @@ a:active {
    text-decoration: none;
 }
 
-
-h1 {
-  margin: 50px 0 30px;
+div.title h1 {
+  font-size: 3em;
+  margin: 0;
   text-align: center;
 }
+
+div.title h2 {
+  font-size: 2em;
+  margin: 0;
+} 
+
 .aBottom {
   padding-top: 100px;
   display: grid;
@@ -107,10 +114,11 @@ h1 {
 }
 .aBottom p {
   font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .aBottom img {
   align-self: center;
-  border-radius: 50px;
+  border-radius: 10px;
   width: 100%;
 }
 .img-container {
@@ -121,7 +129,7 @@ h1 {
   background-color: lightgrey;
   padding: 20px;
   border-radius: 10px;
-  border: 5px solid darkblue;
+  border: 5px solid #042f84;
 }
 blockquote {
   width: 100%;
@@ -134,7 +142,7 @@ blockquote {
   position: relative;
   top: 50px;
   z-index: 2;
-
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 #stuff {
   position: fixed;
@@ -151,15 +159,23 @@ blockquote {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   margin-top: 50px;
+  color: #f4c426;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+.academic-facts button{
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    color: #f4c426;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 #fact-screen {
   grid-row-start: 1;
   grid-row-end: 4;
   grid-column: 2;
   text-align: center;
-  background-color: lightgrey;
+  background-color: #042f84;
   border-radius: 10px;
-  border: 5px solid darkblue;
+  border: 5px solid #042f84;
   margin: 10px;
   font-size: 2em;
   align-content: center;
@@ -206,7 +222,7 @@ blockquote {
   }
 }
 .testimonial-container {
-  background-color: darkblue;
+  background-color: #042f84;
   color: #fff;
   border-radius: 15px;
   margin: 20px auto;
@@ -216,7 +232,7 @@ blockquote {
 }
 
 .fa-quote {
-  color: rgba(255, 255, 255, 0.3);
+  color: #f4c426;
   font-size: 28px;
   position: absolute;
   top: 70px;
