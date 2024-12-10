@@ -95,7 +95,7 @@ h1 {
 .aBottom {
   padding-top: 100px;
   display: grid;
-  grid-template-columns: 100/3vw 100/3vw 100/3vw;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
 }
@@ -120,6 +120,9 @@ h1 {
   background-color: lightgrey;
   padding: 20px;
   border-radius: 10px;
+}
+blockquote {
+  width: 100/3vw;
 }
 #thing {
   background-color: lightgrey;
