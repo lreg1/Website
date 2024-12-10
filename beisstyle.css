@@ -12,7 +12,7 @@ nav {
     color: black;
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
     padding: 10px;
-    outline: 3px solid darkblue;
+    outline: 3px solid #042f84;
     width: 100%; /* Ensures the nav spans the full width */
     background-color: lightgrey;
     margin: 0;
@@ -43,11 +43,11 @@ nav {
   }
   .navBar a:visited {
      text-decoration: none;
-     color: darkblue;
+     color: #042f84;
   }
   .navBar a:hover {
      text-decoration: underline;
-     color: #FFD700;
+     color: #f4c426;
      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
   
   }
@@ -73,7 +73,7 @@ div.beistitle {
     box-sizing: border-box;
     border-radius: 20px;
     overflow: hidden;
-    border: 5px solid darkblue; /* Adjust color and thickness */
+    border: 5px solid #042f84; /* Adjust color and thickness */
     margin-top: 10px;
 }
 
@@ -103,7 +103,7 @@ div.beistitle h2 {
     justify-content: center;
     margin: 50px 20px; /* Adds space around the section for better flow */
     border-radius: 25px; /* Rounds the corners */
-    border: 5px solid darkblue; /* Adjust color and thickness */
+    border: 5px solid #042f84; /* Adjust color and thickness */
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4); /* Adds a subtle shadow for a "lifted" look */
 }
 
@@ -136,7 +136,7 @@ div.beistitle h2 {
 .summary-content h2 {
     font-size: 1.5em; /* Bigger, bolder title */
     margin-bottom: 20px;
-    color: #FFD700; /* Gold for an eye-catching, elegant effect */
+    color: #f4c426; /* Gold for an eye-catching, elegant effect */
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Adds depth to the text */
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 }
@@ -174,7 +174,7 @@ div.beistitle h2 {
 .section-header h2 {
     font-size: 2.5em;/* Adjust for emphasis */
     font-weight: bold;
-    color: #FFD700;/* Neutral color for contrast */
+    color: #f4c426;/* Neutral color for contrast */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);/* Adds subtle shadow for readability */
     margin-top: 40px;
     margin-bottom: -50px;
@@ -209,7 +209,7 @@ div.container {
     margin: 10px;
     position: relative;
     transition: all 700ms ease-in;/* Use the standard property */
-    border: 3px solid darkblue; /* Adjust color and thickness */
+    border: 3px solid #042f84; /* Adjust color and thickness */
 }
 
 .container .panel h3 {
