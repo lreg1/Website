@@ -65,6 +65,6 @@ function setupCarousel(imgsId, leftBtnId, rightBtnId, textAreaId, texts) {
     'Star Student Ari Regensberg finishes First Place in CS competition',
     'Teacher of the Year Awarded to our very own Proffessor Fried',
     'Community-Wide October 7th Commemeration',
-    'LCM Graduate wins Nobel Peace Prize!',
+    'LCM Graduate wins Nobel Peace Prize for Curing Cancer!',
   ]);
   
