@@ -1,0 +1,267 @@
+
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/*
+   Filename: websitestyle.css
+
+*/
+body {
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  background-color: white;
+}
+div.title {
+  background-image: url("building.jpg");
+  background-size: cover; /* Makes the image cover the entire div */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center; /* Centers the image */
+  height: 84vh; /* Makes the div take the full viewport height */
+  display: flex; /* Aligns text within the div */
+  flex-direction: column; /* Stacks the text vertically */
+  justify-content: center; /* Centers text vertically */
+  align-items: center; /* Centers text horizontally */
+  text-align: justify;
+  color: white; /* Ensures text contrasts with the background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  padding: 20px; /* Adds spacing inside the div */
+  box-sizing: border-box; /* Includes padding in height/width calculations */
+  border-radius: 20px; /* Rounds the corners of the div */
+  overflow: hidden; /* Ensures the background image stays within rounded corners */
+  border: 5px solid #042f84; /* Adjust color and thickness */
+  margin-top: 10px; /* Adds space between the div and the nav bar */
+}
+title h1 {
+  font-size: 3em;
+  margin: 0;
+}
+div.title h2 {
+  font-size: 2em;
+  margin: 0;
+}
+nav {
+  color: black;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  padding: 10px;
+  outline: 3px solid #042f84;
+  width: 100%; /* Ensures the nav spans the full width */
+  background-color: lightgrey;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex; /* Aligns items horizontally */
+  align-items: center; /* Vertically centers content */
+  justify-content: space-between; /* Space between logo and navigation links */
+  }
+.logo-link {
+  display: flex; /* Enables flexible alignment */
+  align-items: center; /* Centers the logo vertically in the nav */
+  text-decoration: none; /* Removes the underline from the link */
+}
+.logo {
+  height: 50px;
+  width: auto; /* Maintains the aspect ratio */
+}
+.Right {
+  float: right;
+}
+.navBar a {
+  padding: 10px;
+  text-align: right;
+}
+.navBar a:link {
+   text-decoration: none;
+}
+.navBar a:visited {
+   text-decoration: none;
+   color: #042f84;
+}
+.navBar a:hover {
+   text-decoration: underline;
+   color: #f4c426;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
+
+}
+.navBar a:active {
+   text-decoration: none;
+}
+
+
+h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+.aBottom {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+.aBottom h3 {
+  text-align: center;
+  color: #042f84;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-decoration: underline;
+  font-size: 2em;
+  height: 50px;
+}
+.aBottom p {
+  font-size: 20px;
+}
+.aBottom img {
+  position: relative;
+  top: 100px;
+  border-radius: 5px;
+  height: 50vh;
+   width: 447px;
+}
+.aBottom div {
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 10px;
+}
+#thing {
+  background-color: lightgrey;
+  border: 3px #042f84 solid;
+  border-radius: 5px;
+  width: 20vw;
+  position: relative;
+  top: 50px;
+  z-index: 2;
+
+}
+#stuff {
+  position: fixed;
+  top: 0px;
+  left: 40;
+  background-color: lightgrey;
+  border: 3px #042f84 solid;
+  border-radius: 5px;
+  width: 20vw;
+  z-index: 2;
+}
+.academic-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+#fact-screen {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column: 2;
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 2em;
+  align-content: center;
+}
+.ripple {
+  background-color: #042f84;
+  border-radius: 10px;
+  color: #fff;
+  border: 1px purple solid;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
+}
+
+.ripple>p {
+  height: 0px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.ripple:focus {
+  outline: none;
+}
+
+.ripple .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+.testimonial-container {
+  background-color: #476ce4;
+  color: #fff;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 50px 80px;
+  max-width: 768px;
+  position: relative;
+}
+
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
+}
+
+.fa-quote-right {
+  left: 40px;
+}
+
+.fa-quote-left {
+  right: 40px;
+}
+
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user .user-details {
+  margin-left: 10px;
+}
+
+.user .username {
+  margin: 0;
+}
+.progress-bar {
+  background-color: #fff;
+  height: 4px;
+  width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+
+  .fa-quote {
+    display: none;
+  }
+}
