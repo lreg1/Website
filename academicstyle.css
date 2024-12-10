@@ -66,24 +66,24 @@ nav {
 .Right {
   float: right;
 }
-.navBar a {
+a {
   padding: 10px;
   text-align: right;
 }
-.navBar a:link {
+a:link {
    text-decoration: none;
 }
-.navBar a:visited {
+a:visited {
    text-decoration: none;
    color: #042f84;
 }
-.navBar a:hover {
+a:hover {
    text-decoration: underline;
    color: #f4c426;
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
 
 }
-.navBar a:active {
+a:active {
    text-decoration: none;
 }
 
@@ -111,13 +111,13 @@ h1 {
   font-size: 20px;
 }
 .aBottom img {
-   align-self: center;
+  align-self: center;
   border-radius: 5px;
   height: 50vh;
   width: 250%;
 }
 .img-container {
-  align-items: center;
+  align-self: center;
   width: 33.33%;
 }
 .middle {
@@ -207,7 +207,7 @@ blockquote {
   }
 }
 .testimonial-container {
-  background-color: #476ce4;
+  background-color: darkblue;
   color: #fff;
   border-radius: 15px;
   margin: 20px auto;
