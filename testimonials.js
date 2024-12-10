@@ -6,7 +6,7 @@ const role = document.querySelector('.role')
 
 const testimonials = [
   {
-    name: 'Reuvie K.',
+    name: 'Reuvi K.',
     text: "Lander’s rigorous computer science program has equipped me with the skills to tackle real-world problems. The professors are incredibly supportive and always encourage us to push the boundaries of our knowledge."
   },
   {
