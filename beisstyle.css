@@ -239,4 +239,7 @@ div.container {
     .container .panel:nth-of-type(5) {
         display: none;
     }
+.footer {
+  justify-content: space-around;
+  }
 }
