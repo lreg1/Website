@@ -7,7 +7,9 @@
 body {
     background-color: white;
 }
-
+.footer {
+  justify-content: space-around;
+  }
 nav {
     color: black;
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
@@ -239,7 +241,5 @@ div.container {
     .container .panel:nth-of-type(5) {
         display: none;
     }
-.footer {
-  justify-content: space-around;
-  }
+
 }
