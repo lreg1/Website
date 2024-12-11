@@ -39,6 +39,9 @@ div.title h2 {
   font-size: 2em;
   margin: 0;
 }
+.footer {
+  justify-content: space-around;
+  }
 nav {
   color: black;
   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
@@ -284,7 +287,5 @@ blockquote {
   .fa-quote {
     display: none;
   }
-.footer {
-  justify-content: space-around;
-  }
+
 }
