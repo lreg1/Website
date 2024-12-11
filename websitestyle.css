@@ -390,4 +390,7 @@ h1 {
   .fa-quote {
     display: none;
   }
+.footer {
+  justify-content: space-around;
+  }
 }
