@@ -8,7 +8,7 @@ function request_handler(req, res) {
   console.log(`New request from ${req.socket.remoteAddress} for ${req.url}`);
   let type = getType(req.url);
   // This array doesn't include all of the pictures.
-  let urlArray = ["/greatbeis.jpg","/beispic.jpeg","/class.jpg","/masmidim.jpg","/dish.jpg","/october7pic.JPG","/microscope.jpg","/mishmar.jpg","/ravasher.jpg","/masmidim.jpg","/job.png","/free-opened-book-icon-3163-thumb.png","/teacher-kids.png","/academics.html","/ravsoloveichik.jpeg","/ravbamberger.jpeg","/ravsun.jpeg","/ravsacks.jpeg","/beis.js","/goodpic.jpg","/academicstyle.css","/meirfried.png","/lcm-logo.png","/code.jpg","/ripple.js","/testimonials.js","/shtickle.js","/beis.html","/beisstyle.css","/websitestyle.css","/website.js","/website.html"];
+  let urlArray = ["/group.jpg","/greatbeis.jpg","/beispic.jpeg","/class.jpg","/masmidim.jpg","/dish.jpg","/october7pic.JPG","/microscope.jpg","/mishmar.jpg","/ravasher.jpg","/masmidim.jpg","/job.png","/free-opened-book-icon-3163-thumb.png","/teacher-kids.png","/academics.html","/ravsoloveichik.jpeg","/ravbamberger.jpeg","/ravsun.jpeg","/ravsacks.jpeg","/beis.js","/goodpic.jpg","/academicstyle.css","/meirfried.png","/lcm-logo.png","/code.jpg","/ripple.js","/testimonials.js","/shtickle.js","/beis.html","/beisstyle.css","/websitestyle.css","/website.js","/website.html"];
   if(req.url === "/"){
     res.writeHead(200,"OK",{'Content-Type':'text/html'});
     const html_stream = fs.createReadStream("website.html");
